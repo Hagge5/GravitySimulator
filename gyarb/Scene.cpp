@@ -209,7 +209,7 @@ std::string Scene::determineTexture(double mass) {
 	if(mass < BODY_PLANET_BREAKOFF_PERCENT * this->hud_->getMaxMass())
 		return "gfx\\asteroid.png";
 	else if(mass < BODY_SUN_BREAKOFF_PERCENT * this->hud_->getMaxMass())
-		return "earth.png";
+		return "gfx\\earth.png";
 	else
-		return "sun.png";
+		return "gfx\\sun.png";
 }
