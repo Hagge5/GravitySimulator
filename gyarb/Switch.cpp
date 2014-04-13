@@ -17,7 +17,7 @@ Switch::Switch(sf::Sprite* onSprite, sf::Sprite* offSprite, sf::Sprite* idleSpri
 }
 
 Switch::Switch(sf::FloatRect size, sf::RenderWindow& window, bool initVal)
-	: Button(new sf::Sprite(*LoadTexture("CheckBox.png")), new sf::Sprite(*LoadTexture("CheckBoxHovered.png")), window) {
+	: Button(new sf::Sprite(*LoadTexture("gfx\\CheckBox.png")), new sf::Sprite(*LoadTexture("gfx\\CheckBoxHovered.png")), window) {
 
 		this->getIdleSprite()->setPosition(size.left, size.top);
 		this->getHoverSprite()->setPosition(size.left, size.top);
@@ -31,7 +31,7 @@ Switch::Switch(sf::FloatRect size, sf::RenderWindow& window, bool initVal)
 
 		this->setZone(size);
 
-		this->onSprite_ = new sf::Sprite(*LoadTexture("CheckMark.png"));
+		this->onSprite_ = new sf::Sprite(*LoadTexture("gfx\\CheckMark.png"));
 		this->offSprite_ = new sf::Sprite();
 		this->isOn_ = initVal;
 

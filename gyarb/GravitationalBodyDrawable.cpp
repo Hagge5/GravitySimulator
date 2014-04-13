@@ -6,7 +6,7 @@ GravitationalBodyDrawable::GravitationalBodyDrawable(std::vector<MassBody*>* all
 		this->shape_ = shape;
 
 		if(isStatic) {
-			this->staticSign_ = new sf::Sprite(*LoadTexture("Static.png"));
+			this->staticSign_ = new sf::Sprite(*LoadTexture("gfx\\Static.png"));
 			this->staticSign_->setScale(this->getSprite()->getScale());
 			this->staticSign_->setOrigin(this->staticSign_->getLocalBounds().width * 0.5, this->staticSign_->getLocalBounds().height * 0.5);
 		} else

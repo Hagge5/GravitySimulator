@@ -1,0 +1,16 @@
+﻿  Scene.cpp
+e:\prog1\gyarb\gyarb\scene.cpp(4): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+e:\prog1\gyarb\gyarb\scene.cpp(7): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+e:\prog1\gyarb\gyarb\scene.cpp(10): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+e:\prog1\gyarb\gyarb\scene.cpp(36): warning C4101: 'sadad' : unreferenced local variable
+e:\prog1\gyarb\gyarb\scene.cpp(87): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+e:\prog1\gyarb\gyarb\scene.cpp(87): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+e:\prog1\gyarb\gyarb\scene.cpp(115): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+e:\prog1\gyarb\gyarb\utilfuncs.h(26): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+          e:\prog1\gyarb\gyarb\scene.cpp(121) : see reference to function template instantiation 'float GetAngleBetweenPointsDeg<float>(sf::Vector2<T>,sf::Vector2<T>)' being compiled
+          with
+          [
+              T=float
+          ]
+  LINK : E:\Prog1\gyarb\Debug\gyarb.exe not found or not built by the last incremental link; performing full link
+  gyarb.vcxproj -> E:\Prog1\gyarb\Debug\gyarb.exe

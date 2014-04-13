@@ -19,7 +19,7 @@ public:
 		double destroyRange = 0.0000001,
 		bool isStatic = false,
 		sf::Vector2<double> startPos = sf::Vector2<double>(0, 0), 
-		sf::Sprite* shape = new sf::Sprite(*LoadTexture("unknown.png")),
+		sf::Sprite* shape = new sf::Sprite(*LoadTexture("gfx\\unknown.png")),
 		PositionTracker<double>* posTracker = new PositionTracker<double>(),
 		Vector2Buffer<double>* accelBuffer = new Vector2Buffer<double>(),
 		Vector2Buffer<double>* velocBuffer = new Vector2Buffer<double>());

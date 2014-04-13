@@ -23,7 +23,7 @@ Scene::Scene(sf::RenderWindow* window, sf::Time dt, int ups, float objectScale, 
 	this->objectScale_ = objectScale;
 	this->showTrails_ = showTrails;
 
-	this->hud_ = new HeadsUpDisplay("BRLNSR.TTF", this, this->wdw_, massMax, massMax * 0.05, massMax);
+	this->hud_ = new HeadsUpDisplay("gfx\\BRLNSR.TTF", this, this->wdw_, massMax, massMax * 0.05, massMax);
 	this->bodSys_ = new BodySystem(DESTROY_BODY_COLLISION_RANGE, TRAIL_COLOR, TRAIL_RADIUS, objectScale * BODY_CONSTANT_SCALE, sfxScale * BODY_CONSTANT_SCALE, trailLimit, &this->explosions_);
 
 	this->loadTextures();
@@ -154,10 +154,10 @@ void Scene::clear() {
 }
 
 void Scene::loadTextures() {
-	LoadTexture("explosion.png");
-	LoadTexture("asteroid.png");
-	LoadTexture("earth.png");
-	LoadTexture("sun.png");
+	LoadTexture("gfx\\explosion.png");
+	LoadTexture("gfx\\asteroid.png");
+	LoadTexture("gfx\\earth.png");
+	LoadTexture("gfx\\sun.png");
 }
 
 void Scene::initDefaults() {
@@ -166,7 +166,7 @@ void Scene::initDefaults() {
 	this->clock_ = sf::Clock();
 	this->wdw_->setView(this->view_);
 
-	this->backGround_ = sf::Sprite(*LoadTexture("space.jpg"));
+	this->backGround_ = sf::Sprite(*LoadTexture("gfx\\space.jpg"));
 	this->backGround_.setColor(sf::Color(100, 100, 100));
 	this->resizeBackground();
 }
@@ -207,7 +207,7 @@ void Scene::resizeBackground() {
 
 std::string Scene::determineTexture(double mass) {
 	if(mass < BODY_PLANET_BREAKOFF_PERCENT * this->hud_->getMaxMass())
-		return "asteroid.png";
+		return "gfx\\asteroid.png";
 	else if(mass < BODY_SUN_BREAKOFF_PERCENT * this->hud_->getMaxMass())
 		return "earth.png";
 	else

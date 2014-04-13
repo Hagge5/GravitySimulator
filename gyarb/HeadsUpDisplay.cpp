@@ -27,10 +27,10 @@ HeadsUpDisplay::HeadsUpDisplay(std::string tooltipFontPath, Scene* whichScene, s
 	this->addBodyStatic_ = new Switch(sf::FloatRect(160, 0, 32, 32), *this->wdw_);
 	this->clear_ = new TooltippedButton(sf::Text("Clears all bodies.", tooltipFont_, FONT_SIZE), sf::FloatRect(160, 32, 32, 32), *this->wdw_);
 
-	sf::Sprite* s3 = new sf::Sprite(*LoadTexture("ButtonSquare.png"));
-	AnimatedSprite* s4 = new AnimatedSprite(*LoadTexture("ButtonSquareFlashing.png"), 130, 130, sf::seconds(0.05), false, true);
-	sf::Sprite* s5 = new sf::Sprite(*LoadTexture("TextPause.png"));
-	sf::Sprite* s6 = new sf::Sprite(*LoadTexture("TextPlay.png"));
+	sf::Sprite* s3 = new sf::Sprite(*LoadTexture("gfx\\ButtonSquare.png"));
+	AnimatedSprite* s4 = new AnimatedSprite(*LoadTexture("gfx\\ButtonSquareFlashing.png"), 130, 130, sf::seconds(0.05), false, true);
+	sf::Sprite* s5 = new sf::Sprite(*LoadTexture("gfx\\TextPause.png"));
+	sf::Sprite* s6 = new sf::Sprite(*LoadTexture("gfx\\TextPlay.png"));
 	s3->scale(0.4923076923076925, 0.4923076923076925);
 	s4->scale(0.4923076923076925, 0.4923076923076925);
 	s5->scale(0.4923076923076925, 0.4923076923076925);

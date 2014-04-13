@@ -23,8 +23,8 @@ Button::Button(sf::Rect<float> size, sf::RenderWindow& window)
 
 		this->clicked_ = false;
 
-		this->a_ = new AnimatedSprite(*LoadTexture("ButtonSquareFlashing.png"), 130, 130, sf::seconds(0.05), false, true);
-		this->idleSprite_ = new sf::Sprite(*LoadTexture("ButtonSquare.png"));
+		this->a_ = new AnimatedSprite(*LoadTexture("gfx\\ButtonSquareFlashing.png"), 130, 130, sf::seconds(0.05), false, true);
+		this->idleSprite_ = new sf::Sprite(*LoadTexture("gfx\\ButtonSquare.png"));
 		this->hoverSprite_ = this->a_;
 
 		this->getIdleSprite()->scale(

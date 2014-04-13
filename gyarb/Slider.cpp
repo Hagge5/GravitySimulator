@@ -22,8 +22,8 @@ Slider::Slider(sf::Rect<float> size, sf::RenderWindow& window, double initValPer
 	const float TOP_HEIGHT = 1.8;
 	const float TOP_WIDTH = 0.9;
 	
-	sf::Sprite s1 = sf::Sprite(*LoadTexture("SliderBack.png"));
-	sf::Sprite s2 = sf::Sprite(*LoadTexture("ButtonSquare.png"));
+	sf::Sprite s1 = sf::Sprite(*LoadTexture("gfx\\SliderBack.png"));
+	sf::Sprite s2 = sf::Sprite(*LoadTexture("gfx\\ButtonSquare.png"));
 	s1.setPosition(size.left, size.top);
 
 	s1.setScale(

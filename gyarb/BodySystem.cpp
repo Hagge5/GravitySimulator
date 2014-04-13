@@ -62,7 +62,7 @@ void BodySystem::clear() {
 void BodySystem::eraese(int index) {
 	//fancy shit
 	if(this->explosions_ != nullptr)
-		this->explosions_->add(V2dToV2f(bodies_[index]->getPosition()), *LoadTexture("explosion.png"), 192, 192, sf::seconds(0.05), this->sfxScale_, true);
+		this->explosions_->add(V2dToV2f(bodies_[index]->getPosition()), *LoadTexture("gfx\\explosion.png"), 192, 192, sf::seconds(0.05), this->sfxScale_, true);
 
 	//Actual deletion
 	delete bodies_[index];
