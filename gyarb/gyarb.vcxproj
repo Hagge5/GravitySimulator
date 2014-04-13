@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FE27AB47-CBF9-4661-B6F4-801DD53345E9}</ProjectGuid>
+    <RootNamespace>gyarb</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\SFML-2.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\SFML-2.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>E:\SFML-2.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>E:\SFML-2.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimatedSprite.h" />
+    <ClInclude Include="Arrow.h" />
+    <ClInclude Include="Body.h" />
+    <ClInclude Include="BodySystem.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="EffectManager.h" />
+    <ClInclude Include="GravitationalBody.h" />
+    <ClInclude Include="GravitationalBodyDrawable.h" />
+    <ClInclude Include="GravityController.h" />
+    <ClInclude Include="HeadsUpDisplay.h" />
+    <ClInclude Include="MassBody.h" />
+    <ClInclude Include="PositionTracker.h" />
+    <ClInclude Include="PositionTracker.hpp" />
+    <ClInclude Include="PositionTrackerDrawable.h" />
+    <ClInclude Include="PositionTrackerDrawable.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Slider.h" />
+    <ClInclude Include="Switch.h" />
+    <ClInclude Include="TextureLoader.h" />
+    <ClInclude Include="TooltippedButton.h" />
+    <ClInclude Include="TooltippedSlider.h" />
+    <ClInclude Include="UtilFuncs.h" />
+    <ClInclude Include="Vector2Buffer.h" />
+    <ClInclude Include="Vector2Buffer.hpp" />
+    <ClInclude Include="Widget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimatedSprite.cpp" />
+    <ClCompile Include="Arrow.cpp" />
+    <ClCompile Include="Body.cpp" />
+    <ClCompile Include="BodySystem.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="EffectManager.cpp" />
+    <ClCompile Include="GravitationalBody.cpp" />
+    <ClCompile Include="GravitationalBodyDrawable.cpp" />
+    <ClCompile Include="GravityController.cpp" />
+    <ClCompile Include="HeadsUpDisplay.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MassBody.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Slider.cpp" />
+    <ClCompile Include="Switch.cpp" />
+    <ClCompile Include="TextureLoader.cpp" />
+    <ClCompile Include="TooltippedButton.cpp" />
+    <ClCompile Include="TooltippedSlider.cpp" />
+    <ClCompile Include="UtilFuncs.cpp" />
+    <ClCompile Include="Widget.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
